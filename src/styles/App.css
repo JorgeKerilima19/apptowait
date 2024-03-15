@@ -1,4 +1,36 @@
+:root {
+  --color-primary: blue;
+  --color-secondary: black;
+  --color-tertiary: black;
+
+  --text-primary: white;
+  --text-secondary: black;
+  --text-optional: gray;
+}
 .root {
   display: flex;
   gap: 1rem;
+}
+.header {
+  min-height: 100vh;
+}
+.navbar {
+  width: 13.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.navbar a {
+  opacity: 0.75;
+}
+a.active {
+  color: var(--color-primary);
+  opacity: 1;
+}
+.active::after {
+  content: "";
+  height: 100%;
+  width: 0.5rem;
+  background-color: var(--color-primary);
+  left: -0.5rem;
+  position: absolute;
 }

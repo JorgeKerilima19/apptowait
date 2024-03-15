@@ -1,21 +1,28 @@
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 export const Navbar = () => {
   return (
     <>
-      <header>
+      <header className="header flex items-center">
         <nav>
-          <ul className="flex">
+          <ul className="flex-col items-start navbar gap-4 pl-4">
             <li>
-              <Link to="/">Home</Link>
+              <NavLink className="relative pl-1" to="/">
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/browse">Browse</Link>
+              <NavLink className="relative pl-1" to="/browse">
+                Browse
+              </NavLink>
             </li>
-            <Link to="/radio">Radio</Link>
-            <li></li>
+            <NavLink className="relative pl-1" to="/radio">
+              Radio
+            </NavLink>
             <li>
-              <Link to="/history">History</Link>
+              <NavLink className="relative pl-1" to="/history">
+                History
+              </NavLink>
             </li>
           </ul>
         </nav>
