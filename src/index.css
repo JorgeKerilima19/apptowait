@@ -14,7 +14,7 @@ ul {
 button {
   font-size: inherit;
 }
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -711,6 +711,12 @@ a{
 }
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+.text-primary {
+  color: var(--text-primary);
+}
+.text-secondary {
+  color: var(--text-primary);
 }
 .text-center {
   text-align: center;

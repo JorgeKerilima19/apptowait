@@ -12,8 +12,8 @@ export const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink className="relative pl-1" to="/browse">
-                Browse
+              <NavLink className="relative pl-1" to="/explore">
+                Explore
               </NavLink>
             </li>
             <NavLink className="relative pl-1" to="/radio">
@@ -27,7 +27,7 @@ export const Navbar = () => {
           </ul>
         </nav>
       </header>
-      <main>
+      <main className="pt-5">
         <Outlet />
       </main>
     </>
