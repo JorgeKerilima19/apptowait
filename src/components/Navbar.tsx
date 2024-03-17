@@ -27,7 +27,7 @@ export const Navbar = () => {
           </ul>
         </nav>
       </header>
-      <main className="pt-5">
+      <main className="pt-5 overflow-hidden">
         <Outlet />
       </main>
     </>

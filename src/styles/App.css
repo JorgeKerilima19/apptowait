@@ -6,6 +6,7 @@
   --text-primary: white;
   --text-secondary: black;
   --text-optional: gray;
+  --text-primary-static: white;
 }
 .root {
   display: flex;
@@ -39,4 +40,55 @@ a.active {
   width: 2rem;
   border-radius: 50%;
   object-fit: cover;
+}
+.music-cards-container {
+  background-color: aqua;
+  width: max(40rem, 50%);
+}
+.music-card-container {
+  width: 22rem;
+  height: 13rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.2rem;
+  color: var(--text-primary-static);
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.music-card-container::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    40deg,
+    rgba(0, 0, 0, 1) 16%,
+    rgba(253, 187, 45, 0) 100%
+  );
+}
+.music-card-container > * {
+  z-index: 100;
+}
+[class^="card-button"] {
+  outline: 0;
+  border: 0;
+  padding: 0.2rem 1rem;
+  width: 7rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+}
+.card-button-listen {
+  background-color: blueviolet;
+}
+.card-button-add {
+  background-color: transparent;
+}
+[class^="card-button"]:hover {
+  background-color: var(--color-tertiary);
 }
