@@ -23,7 +23,7 @@ export const Home = () => {
       <div>
         Genres and Moods
         <div className="flex gap-4 w-full overflow-auto">
-          {[...Array(4)].map((el) => (
+          {[...Array(8)].map((el) => (
             <GenreCard />
           ))}
         </div>

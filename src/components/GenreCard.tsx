@@ -1,10 +1,16 @@
 export const GenreCard = () => {
   const colors: { [key: number]: string } = {
-    0: "black",
-    1: "red",
-    2: "blue",
-    3: "green",
-    4: "yellow",
+    0: "#845EC2",
+    1: "#D65DB1",
+    2: "#FF6F91",
+    3: "#FF9671",
+    4: "#FFC75F",
+    5: "#F9F871",
+    6: "#008F7A",
+    7: "#0081CF",
+    8: "#C34A36",
+    9: "#00C9A7",
+    10: "#845EC2",
   };
 
   const startNumber = Math.floor(Math.random() * Object.keys(colors).length);
