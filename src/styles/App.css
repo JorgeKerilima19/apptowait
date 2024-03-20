@@ -42,8 +42,7 @@ a.active {
   object-fit: cover;
 }
 .music-cards-container {
-  background-color: aqua;
-  width: max(40rem, 50%);
+  width: max(40rem, 100%);
 }
 .music-card-container {
   width: 22rem;
@@ -55,13 +54,13 @@ a.active {
   color: var(--text-primary-static);
   position: relative;
   border-radius: 1rem;
-  overflow: hidden;
 }
 .music-card-container::after {
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
+  border-radius: inherit;
   background: linear-gradient(
     40deg,
     rgba(0, 0, 0, 1) 16%,
