@@ -35,11 +35,27 @@ a.active {
   left: -0.5rem;
   position: absolute;
 }
-.user-img {
-  height: 2rem;
-  width: 2rem;
+.artist-img {
+  height: 7rem;
+  width: 7rem;
   border-radius: 50%;
   object-fit: cover;
+}
+.artist-container {
+  background-color: var(--text-optional);
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+}
+.button-click {
+  padding: 0.2rem 0.5rem;
+  background-color: var(--color-primary);
+  outline: transparent;
+  border: 0;
+  color: var(--text-primary-static);
+  border-radius: 0.2rem;
+}
+.button-click:hover {
+  background-color: var(--color-secondary);
 }
 .music-cards-container {
   width: max(40rem, 100%);

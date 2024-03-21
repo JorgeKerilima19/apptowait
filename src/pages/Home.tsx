@@ -1,4 +1,4 @@
-import { GenreCard, MusicCard, User } from "../components";
+import { Artist, GenreCard, MusicCard } from "../components";
 import useWindowSizeStore from "../store/windowSize";
 
 export const Home = () => {
@@ -6,11 +6,6 @@ export const Home = () => {
 
   return (
     <>
-      <div className="flex gap-2 w-full">
-        {[...Array(4)].map((el) => (
-          <User />
-        ))}
-      </div>
       <div className="flex gap-4 overflow-x-scroll music-cards-container">
         <MusicCard />
         <MusicCard />
@@ -20,11 +15,27 @@ export const Home = () => {
         <MusicCard />
         <MusicCard />
       </div>
-      <div>
-        Genres and Moods
-        <div className="flex gap-4 w-full overflow-auto">
-          {[...Array(8)].map((el) => (
-            <GenreCard />
+      <div className="flex gap-4 w-full overflow-auto">
+        {[...Array(8)].map((el) => (
+          <GenreCard />
+        ))}
+      </div>
+      <div className="flex-col gap-4 w-full">
+        <h3>For you</h3>
+        <ul className="flex gap-2">
+          <li>
+            <button className="button-click">Artist</button>
+          </li>
+          <li>
+            <button className="button-click">Albums</button>
+          </li>
+          <li>
+            <button className="button-click">Podcast & others</button>
+          </li>
+        </ul>
+        <div className="flex gap-4">
+          {[...Array(4)].map((el) => (
+            <Artist />
           ))}
         </div>
       </div>
