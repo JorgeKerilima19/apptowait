@@ -10,3 +10,28 @@
   object-fit: cover;
   border-radius: 50%;
 }
+.controls-container {
+  background-color: rgb(255, 145, 0);
+}
+.svg-placeholder {
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: black;
+  border-radius: 50%;
+  display: block;
+}
+.controls-duration {
+  width: 15rem;
+  height: 0.2rem;
+  background-color: var(--color-secondary);
+}
+.duration-indicator {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+}
