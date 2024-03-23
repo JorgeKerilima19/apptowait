@@ -1,19 +1,25 @@
 import { Artist, GenreCard, MusicCard } from "../components";
 import useWindowSizeStore from "../store/windowSize";
+import img from "../assets/placeholder.jpg";
 
 export const Home = () => {
   const windowSize = useWindowSizeStore((state: any) => state.windowSize);
 
   return (
     <>
+      <div className="mb-4 flex justify-btw items-center pr-3">
+        <form action="">
+          <input type="text" id="search" />
+        </form>
+        <div className="user-container flex items-center gap-5 p-2">
+          <img className="user-img" src={img} alt="User Image" />
+          <span>user name</span>
+        </div>
+      </div>
       <div className="flex gap-4 overflow-x-scroll music-cards-container">
-        <MusicCard />
-        <MusicCard />
-        <MusicCard />
-        <MusicCard />
-        <MusicCard />
-        <MusicCard />
-        <MusicCard />
+        {[...Array(8)].map((el) => (
+          <MusicCard />
+        ))}
       </div>
       <div className="flex gap-4 w-full overflow-auto">
         {[...Array(8)].map((el) => (

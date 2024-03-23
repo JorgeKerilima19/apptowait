@@ -107,3 +107,15 @@ a.active {
 [class^="card-button"]:hover {
   background-color: var(--color-tertiary);
 }
+.user-container {
+  background-color: black;
+  color: var(--text-primary-static);
+  width: 9.5rem;
+  border-radius: 0.5rem;
+}
+.user-img {
+  height: 2rem;
+  width: 2rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
