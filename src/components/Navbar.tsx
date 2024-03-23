@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
+import { MusicPlayer } from ".";
 
 export const Navbar = () => {
   return (
@@ -27,8 +28,9 @@ export const Navbar = () => {
           </ul>
         </nav>
       </header>
-      <main className="pt-5 overflow-hidden">
+      <main className="py-8 overflow-hidden">
         <Outlet />
+        <MusicPlayer />
       </main>
     </>
   );

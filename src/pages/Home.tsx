@@ -39,7 +39,7 @@ export const Home = () => {
             <button className="button-click">Podcast & others</button>
           </li>
         </ul>
-        <div className="flex gap-4">
+        <div className="flex gap-4 pb-8">
           {[...Array(4)].map((el) => (
             <Artist />
           ))}

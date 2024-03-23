@@ -28,6 +28,9 @@ a {
 .list-dot {
   list-style: circle;
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
