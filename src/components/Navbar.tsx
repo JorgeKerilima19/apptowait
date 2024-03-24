@@ -28,7 +28,7 @@ export const Navbar = () => {
           </ul>
         </nav>
       </header>
-      <main className="py-8 overflow-hidden">
+      <main className="py-4 overflow-hidden mb-8">
         <Outlet />
         <MusicPlayer />
       </main>

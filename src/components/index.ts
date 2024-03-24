@@ -6,3 +6,4 @@ export * from "./MusicPlayer";
 export * from "./SongCard";
 export * from "./MusicPlayerControls";
 export * from "./MusicPlayerSound";
+export * from "./SongInfoCard";
