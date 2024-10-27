@@ -3,7 +3,7 @@ import { Navbar } from "./components";
 import "./index.css";
 
 import { Route, Routes } from "react-router-dom";
-import { Explore, History, Home, Radio } from "./pages";
+import { Explore, History, Home } from "./pages";
 
 function App() {
   return (
@@ -12,7 +12,6 @@ function App() {
         <Route index element={<Home />} />
         <Route path="explore" element={<Explore />} />
         <Route path="history" element={<History />} />
-        <Route path="radio" element={<Radio />} />
       </Route>
     </Routes>
   );

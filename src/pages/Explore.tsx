@@ -2,7 +2,7 @@ import { Artist, MusicCard, SongInfoCard } from "../components";
 
 export const Explore = () => {
   return (
-    <div className="flex-col gap-5">
+    <div className="flex-col gap-5 mb-8">
       <h3>Top Artists</h3>
       <div className="flex overflow-x-auto gap-2">
         {[...Array(3)].map((el) => (

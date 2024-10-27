@@ -11,9 +11,13 @@
 .root {
   display: flex;
   gap: 1rem;
+  position: relative;
 }
 .header {
+  position: sticky;
+  top: 0;
   min-height: 100vh;
+  max-height: 100vh;
 }
 .navbar {
   width: 13.5rem;

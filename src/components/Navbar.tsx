@@ -17,9 +17,6 @@ export const Navbar = () => {
                 Explore
               </NavLink>
             </li>
-            <NavLink className="relative pl-1" to="/radio">
-              Radio
-            </NavLink>
             <li>
               <NavLink className="relative pl-1" to="/history">
                 History
