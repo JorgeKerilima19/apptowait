@@ -843,3 +843,9 @@ a {
 .bg-primary {
   background-color: var(--bg-primary);
 }
+.separator-top {
+  border-top: solid var(--bg-primary) 0.2rem;
+}
+.separator-bottom {
+  border-bottom: solid var(--bg-primary) 0.2rem;
+}
