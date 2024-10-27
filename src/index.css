@@ -7,6 +7,7 @@
 }
 :root {
   --header-height: 5rem;
+  --bg-primary: hsl(0, 0%, 93%);
 }
 ul {
   list-style: none;
@@ -720,7 +721,7 @@ a {
   color: var(--text-primary);
 }
 .text-secondary {
-  color: var(--text-primary);
+  color: var(--text-secondary);
 }
 .text-center {
   text-align: center;
@@ -838,4 +839,7 @@ a {
 }
 .w-max-40 {
   max-width: 40rem;
+}
+.bg-primary {
+  background-color: var(--bg-primary);
 }
